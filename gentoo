@@ -101,8 +101,8 @@ grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 exit
 END
-#cd
 
-#umount -l /mnt/gentoo/dev{/shm,/pts,}
-#umount -R /mnt/gentoo
-#reboot
+
+umount -l /mnt/gentoo/dev{/shm,/pts,}
+umount -R /mnt/gentoo
+reboot
